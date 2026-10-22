@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "scope": "PatientPheX phenotype span recognition, HPO normalization, patient attribution",
+  "execution": "literature_review_only",
+  "sources": [
+    {
+      "id": "chip2026_overview",
+      "url": "https://arxiv.org/abs/2610.29606",
+      "full_text": "https://arxiv.org/pdf/2610.29606",
+      "published": "2026-10-21",
+      "status": "organizer_preprint",
+      "verified_sections": ["3.3", "3.4", "4.1", "4.2"],
+      "limitations": ["reported formal leaderboard result, not locally reproduced", "not a live leaderboard query"]
+    },
+    {
+      "id": "agriv_weights",
+      "url": "https://huggingface.co/rigidk/CHIP2026-PatientPheX-Agriv",
+      "metadata_url": "https://huggingface.co/api/models/rigidk/CHIP2026-PatientPheX-Agriv",
+      "status": "author_model_card_and_public_file_listing",
+      "revision": "7a98ca95683eb920b09cc9141cdf512dc5f1fa41",
+      "created_at": "2026-10-03T15:24:13.000Z",
+      "last_modified": "2026-10-03T16:00:58.000Z",
+      "private": false,
+      "gated": false,
+      "weights_downloaded": false,
+      "limitations": ["training provenance is author-declared", "full inference code package not located", "full-fit models overlap our local development split"]
+    },
+    {
+      "id": "autopcr",
+      "url": "https://academic.oup.com/bioinformatics/article/42/Supplement_1/btag304/8726349",
+      "alternate_primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13340160/",
+      "preprint_url": "https://arxiv.org/abs/2507.19315",
+      "code": "https://github.com/yctao7/AutoPCR",
+      "published": "2026-07-07",
+      "status": "peer_reviewed",
+      "limitations": ["overlap-based mention evaluation differs from exact spans", "main 80B and 30B MoE backends exceed 10B total-parameter limit", "external evaluation and tuning corpora cannot be imported as task training labels"]
+    },
+    {
+      "id": "leap",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41698530/",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1673852726000536",
+      "doi": "10.1016/j.jgg.2026.02.009",
+      "code": "https://github.com/Marker0707/LEAP",
+      "published_online": "2026-02-14",
+      "status": "peer_reviewed",
+      "limitations": ["clinical phenotype sets differ from exact-span multi-patient task", "ancestor pruning must not be copied without task validation", "ontology-derived training pairs are not equivalent to manually labeled clinical notes"]
+    },
+    {
+      "id": "rag_hpo",
+      "url": "https://link.springer.com/article/10.1186/s13073-025-01521-w",
+      "code": "https://github.com/PoseyPod/RAG-HPO",
+      "published": "2025-08-18",
+      "status": "peer_reviewed",
+      "limitations": ["best reported configuration uses 70B", "cases with fewer than four phenotypes excluded", "phenotype concept sets differ from exact span plus patient evaluation"]
+    },
+    {
+      "id": "rare_phenix",
+      "url": "https://www.nature.com/articles/s41746-026-03275-0",
+      "preprint_url": "https://arxiv.org/html/2602.20324v1",
+      "code": "https://github.com/cathyshyr/RARE_PHENIX_for_rare_disease_phenotyping",
+      "public_adapter_card": "https://huggingface.co/shyrcathy/rare-phenix-llama2-70b-raredis",
+      "published": "2026-10-15",
+      "status": "peer_reviewed_accepted_early_version",
+      "limitations": ["clinical diagnostic prioritization differs from exhaustive mention extraction", "external expert-labeled training sources", "public RareDis adapter is not the full UDN-trained system", "detailed methods read from February preprint; journal landing page confirms accepted status and cohort counts"]
+    },
+    {
+      "id": "glim",
+      "url": "https://aclanthology.org/2025.findings-acl.727/",
+      "code": "https://github.com/HaoFang10/GLiM",
+      "published_month": "2025-07",
+      "status": "peer_reviewed_findings_acl",
+      "limitations": ["adjacent biomedical document relation extraction benchmarks, not PatientPheX", "incomplete-label assumptions require separate validation"]
+    },
+    {
+      "id": "gliner2",
+      "url": "https://aclanthology.org/2025.emnlp-demos.10/",
+      "methods_url": "https://arxiv.org/html/2507.18546v1",
+      "code": "https://github.com/fastino-ai/GLiNER2",
+      "preprint_published": "2025-07-24",
+      "status": "emnlp_2025_system_demonstration",
+      "limitations": ["not HPO-specific validation", "original hierarchical extraction lacks zero-shot benchmark evaluation", "checkpoint-specific provenance remains to be audited"]
+    },
+    {
+      "id": "hpo_mcp",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232345/",
+      "doi": "10.64898/2026.05.23.26353963",
+      "published": "2026-05-25",
+      "status": "preprint",
+      "limitations": ["four synthetic notes", "repeated model runs are not independent clinical cases", "does not isolate MCP protocol superiority over equivalent retrieval interfaces"]
+    },
+    {
+      "id": "timex",
+      "url": "https://www.nature.com/articles/s44401-026-00099-8",
+      "published": "2026-06-19",
+      "status": "peer_reviewed",
+      "limitations": ["phenotype onset extraction rather than exact phenotype attribution", "family-history filtering does not transfer directly to multiple target patients"]
+    },
+    {
+      "id": "phenogpt2_implementation",
+      "url": "https://github.com/WGLab/PhenoGPT2",
+      "status": "author_repository_reviewed",
+      "limitations": ["not all linked checkpoints verified accessible", "training sources need task-specific eligibility review"]
+    },
+    {
+      "id": "competition_rules",
+      "url": "https://github.com/DUTIR-BioNLP/PatientPheX",
+      "status": "organizer_documentation"
+    }
+  ],
+  "local_evidence": [
+    "RECALL_OPTIMIZATION_REPORT.md",
+    "runs/recall_optimization_v1/analysis.json"
+  ]
+}

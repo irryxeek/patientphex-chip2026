@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-10-22T13:06:01.594420+00:00",
+  "scope": "Standalone GitHub export; CPU checks only, no new training or online evaluation",
+  "python": "3.10.12",
+  "focused_cpu_tests": {
+    "passed": 92,
+    "failed": 0,
+    "seconds": 9.32,
+    "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 python -m pytest -q"
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "passed": true,
+    "files": 34
+  },
+  "historical_entrypoint_import_smokes": {
+    "baselines_v1": "passed",
+    "optimization_v1": "passed",
+    "recall_optimization_v1": "passed",
+    "neural_frontier_v1": "passed"
+  },
+  "original_gpu_validation": "results/verification.json",
+  "source_export_manifest": "SOURCE_MANIFEST.json",
+  "pre_commit": {
+    "ruff": "passed",
+    "ruff-format": "passed"
+  }
+}

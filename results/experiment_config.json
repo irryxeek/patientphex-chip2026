@@ -1,0 +1,72 @@
+{
+  "ner_settings": {
+    "epochs": 4,
+    "lr": 3e-05,
+    "length": 384,
+    "stride": 64,
+    "batch": 8,
+    "seed": 42
+  },
+  "relation_settings": {
+    "epochs": 3,
+    "lr": 2e-05,
+    "length": 512,
+    "batch": 8,
+    "seed": 43
+  },
+  "entity_selection": {
+    "mode": "replace",
+    "similarity": 0.9,
+    "margin": 0.03
+  },
+  "relation_selection": {
+    "name": "neural_frontier",
+    "weight": 0.25,
+    "threshold": 0.35
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "threadpoolctl": "3.7.0",
+    "torch": "2.9.0",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0"
+  },
+  "inputs": {
+    "train": {
+      "filename": "PatientPheX-train.jsonl",
+      "sha256": "5029544d59a1e812de83c07a56d841c09b88cae222d4266fd2930b4c9a224786"
+    },
+    "hpo": {
+      "filename": "hp.obo",
+      "sha256": "a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b"
+    },
+    "a": {
+      "filename": "PatientPheX-A.jsonl",
+      "sha256": "dd734837cc1f9276ca15797db6807d71464a1f698808620d418a2a46712d95cd"
+    },
+    "b": {
+      "filename": "PatientPheX-V1-B.jsonl",
+      "sha256": "4dafea5aa59bfd5f90151ee3732ee475323512b8691f370f4d4678b628cdb62a"
+    }
+  },
+  "models": {
+    "biolinkbert_base": {
+      "repo": "michiyasunaga/BioLinkBERT-base",
+      "revision": "b71f5d70f063d1c8f1124070ce86f1ee463ca1fe"
+    },
+    "sapbert": {
+      "repo": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d"
+    }
+  },
+  "official_training_documents": 80,
+  "outer_fit_documents": 64,
+  "development_documents": 16,
+  "development_patients": 54,
+  "split_seed": 42,
+  "inner_fold_seed": 1729,
+  "inner_folds": 4
+}

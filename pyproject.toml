@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["reproduction/patientphex_532512/tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["reproducibility"]
+
+[tool.ruff.lint]
+# Preserve the lint policy used for these files in the original workspace.
+select = ["E", "F", "UP", "B", "I", "G"]
+ignore = ["F405", "F403", "E731", "B007", "UP032", "G004", "UP045", "UP035"]

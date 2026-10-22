@@ -1,0 +1,551 @@
+{
+  "scope": "PatientPheX project only; no LongVT framework code or other experiments",
+  "portability_changes": "Model-root default changed to models; server-specific Python/artifact/GPU examples generalized; documentation explains omitted local artifacts. Links to omitted local artifacts are identified as server-only records.",
+  "note": "Export hashes differ only where export_edited is true. Original experiment hashes are retained as provenance.",
+  "files": [
+    {
+      "source": ".gitignore",
+      "path": "reproduction/patientphex_532512/.gitignore",
+      "kind": "working_source_or_report",
+      "source_sha256": "626edbd165d8557c8313592719affe87396ec66cd035a04db8218dfa250ba52e",
+      "export_sha256": "626edbd165d8557c8313592719affe87396ec66cd035a04db8218dfa250ba52e",
+      "export_edited": false
+    },
+    {
+      "source": "BASELINE_REPORT.md",
+      "path": "reproduction/patientphex_532512/BASELINE_REPORT.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "541c44623b2026b4d56269ee98bd7de0e2aefbaf6a69aa96f645afbb9434e733",
+      "export_sha256": "541c44623b2026b4d56269ee98bd7de0e2aefbaf6a69aa96f645afbb9434e733",
+      "export_edited": false
+    },
+    {
+      "source": "FRONTIER_EXECUTION_PROTOCOL.md",
+      "path": "reproduction/patientphex_532512/FRONTIER_EXECUTION_PROTOCOL.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "39c7bbeafc24dd88a4a21fe198eb836495f57eb1be1b83998485a1fe43aff891",
+      "export_sha256": "39c7bbeafc24dd88a4a21fe198eb836495f57eb1be1b83998485a1fe43aff891",
+      "export_edited": false
+    },
+    {
+      "source": "FRONTIER_RESEARCH_20261022.md",
+      "path": "reproduction/patientphex_532512/FRONTIER_RESEARCH_20261022.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "5342835d9cef8758ce1a1abc9be29d3d465f49f5f34ec726633d96c7f6c1592b",
+      "export_sha256": "9daaf062549d31281518a7a32466fd3f198581b2029f622ee9d78ee2c96d8065",
+      "export_edited": true
+    },
+    {
+      "source": "NEURAL_FRONTIER_REPORT.md",
+      "path": "reproduction/patientphex_532512/NEURAL_FRONTIER_REPORT.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "357e660f121d6342889dd4d713cef492a907ceeefadfd2c2709999933a7e2ca1",
+      "export_sha256": "c73f5ed003f8cb17cde02c5e83c9fc8c6f5ae463ef5fa8add31776ca10142c6b",
+      "export_edited": true
+    },
+    {
+      "source": "OPTIMIZATION_IDEAS_20261021.md",
+      "path": "reproduction/patientphex_532512/OPTIMIZATION_IDEAS_20261021.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "508e7860c6a113a119611680731b42f7e5901e3431e093e150b9d0df9cc67ada",
+      "export_sha256": "508e7860c6a113a119611680731b42f7e5901e3431e093e150b9d0df9cc67ada",
+      "export_edited": false
+    },
+    {
+      "source": "OPTIMIZATION_PROTOCOL.md",
+      "path": "reproduction/patientphex_532512/OPTIMIZATION_PROTOCOL.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "71dc63361d4d6a26dca48e9067b0b811ab8e17de9c278b7d90b3a9d74270433f",
+      "export_sha256": "71dc63361d4d6a26dca48e9067b0b811ab8e17de9c278b7d90b3a9d74270433f",
+      "export_edited": false
+    },
+    {
+      "source": "OPTIMIZATION_REPORT.md",
+      "path": "reproduction/patientphex_532512/OPTIMIZATION_REPORT.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "7cbab233f9080dd7dbda0033dd279212f587b793939779323f8fa9e50b2679c1",
+      "export_sha256": "7cbab233f9080dd7dbda0033dd279212f587b793939779323f8fa9e50b2679c1",
+      "export_edited": false
+    },
+    {
+      "source": "PATIENT_REFINEMENT_PROTOCOL.md",
+      "path": "reproduction/patientphex_532512/PATIENT_REFINEMENT_PROTOCOL.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "cc135881966b40188fbd1b35e5167666b09d82603a2f0ab23de8669261c2e4dc",
+      "export_sha256": "cc135881966b40188fbd1b35e5167666b09d82603a2f0ab23de8669261c2e4dc",
+      "export_edited": false
+    },
+    {
+      "source": "README.md",
+      "path": "reproduction/patientphex_532512/README.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "57d5e2bec02baec402f828138c0c07581bb006a3e3cfea1488c87b483548e6b4",
+      "export_sha256": "4a60582d923d4dfaf8314034b99bb1aa7843f133d8e543d1d3861d155c8dfb81",
+      "export_edited": true
+    },
+    {
+      "source": "RECALL_OPTIMIZATION_PROTOCOL.md",
+      "path": "reproduction/patientphex_532512/RECALL_OPTIMIZATION_PROTOCOL.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "bb09072b851a96645e7b53d411161c734ab187719965f0a8181121eaeb25ba5a",
+      "export_sha256": "bb09072b851a96645e7b53d411161c734ab187719965f0a8181121eaeb25ba5a",
+      "export_edited": false
+    },
+    {
+      "source": "RECALL_OPTIMIZATION_REPORT.md",
+      "path": "reproduction/patientphex_532512/RECALL_OPTIMIZATION_REPORT.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "d375a736bc16d87c922c4f7e661ceef704556f9456eaccf7cb3e96db687f5a76",
+      "export_sha256": "d375a736bc16d87c922c4f7e661ceef704556f9456eaccf7cb3e96db687f5a76",
+      "export_edited": false
+    },
+    {
+      "source": "SET_OPTIMIZATION_PROTOCOL.md",
+      "path": "reproduction/patientphex_532512/SET_OPTIMIZATION_PROTOCOL.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "b74f5610e80fc28283eb0ba82f5e7c5db5160bf3e3ff3dcfbea0cd6c3310c3d9",
+      "export_sha256": "b74f5610e80fc28283eb0ba82f5e7c5db5160bf3e3ff3dcfbea0cd6c3310c3d9",
+      "export_edited": false
+    },
+    {
+      "source": "SET_OPTIMIZATION_REPORT.md",
+      "path": "reproduction/patientphex_532512/SET_OPTIMIZATION_REPORT.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "92c83ae243a866d68035e858290bef8b6a64698abd3088b6f13dbca9ba47e1d7",
+      "export_sha256": "92c83ae243a866d68035e858290bef8b6a64698abd3088b6f13dbca9ba47e1d7",
+      "export_edited": false
+    },
+    {
+      "source": "TASK_PLAN.md",
+      "path": "reproduction/patientphex_532512/TASK_PLAN.md",
+      "kind": "working_source_or_report",
+      "source_sha256": "b68c2889d5d96983e845e6c27bef6691343fdccbb5d4011da60ec8cdb10fc76f",
+      "export_sha256": "b68c2889d5d96983e845e6c27bef6691343fdccbb5d4011da60ec8cdb10fc76f",
+      "export_edited": false
+    },
+    {
+      "source": "analyze_baselines.py",
+      "path": "reproduction/patientphex_532512/analyze_baselines.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_edited": false
+    },
+    {
+      "source": "enhanced.py",
+      "path": "reproduction/patientphex_532512/enhanced.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "52838c644bc5f154590bd56f6f178bbc188ef1a5b32e74422184b742b43a6ac4",
+      "export_sha256": "52838c644bc5f154590bd56f6f178bbc188ef1a5b32e74422184b742b43a6ac4",
+      "export_edited": false
+    },
+    {
+      "source": "examples/synthetic_smoke.input.jsonl",
+      "path": "reproduction/patientphex_532512/examples/synthetic_smoke.input.jsonl",
+      "kind": "working_source_or_report",
+      "source_sha256": "356d89e024c552766615da56c3ce9cba33f45c81fc3c37fd78e800d906bce974",
+      "export_sha256": "356d89e024c552766615da56c3ce9cba33f45c81fc3c37fd78e800d906bce974",
+      "export_edited": false
+    },
+    {
+      "source": "lexical_recall.py",
+      "path": "reproduction/patientphex_532512/lexical_recall.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_edited": false
+    },
+    {
+      "source": "neural_frontier.py",
+      "path": "reproduction/patientphex_532512/neural_frontier.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "9eb00b69c7e8edd3ab28ba6e3ef74639365d4985ad665c3ee3a532e9c1849676",
+      "export_sha256": "9eb00b69c7e8edd3ab28ba6e3ef74639365d4985ad665c3ee3a532e9c1849676",
+      "export_edited": false
+    },
+    {
+      "source": "patient_sets.py",
+      "path": "reproduction/patientphex_532512/patient_sets.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_edited": false
+    },
+    {
+      "source": "patientphex.py",
+      "path": "reproduction/patientphex_532512/patientphex.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_edited": false
+    },
+    {
+      "source": "predict_bundle.py",
+      "path": "reproduction/patientphex_532512/predict_bundle.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "80f63d1bf9c8da58287780b2740b0bfde3f87d7ce1792f4ce8a1fac699d3bfe0",
+      "export_sha256": "80f63d1bf9c8da58287780b2740b0bfde3f87d7ce1792f4ce8a1fac699d3bfe0",
+      "export_edited": false
+    },
+    {
+      "source": "predict_neural_bundle.py",
+      "path": "reproduction/patientphex_532512/predict_neural_bundle.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "c7c0d49d14ad3351f80a97bc06e33ab74931181ab37c621126cf7c3b549dac3f",
+      "export_sha256": "c7c0d49d14ad3351f80a97bc06e33ab74931181ab37c621126cf7c3b549dac3f",
+      "export_edited": false
+    },
+    {
+      "source": "research/frontier_20261022/sources.json",
+      "path": "reproduction/patientphex_532512/research/frontier_20261022/sources.json",
+      "kind": "working_source_or_report",
+      "source_sha256": "ab5281e16715a84c87eadea431473853bd1e34e601cc499b825b3ba941b027b4",
+      "export_sha256": "ab5281e16715a84c87eadea431473853bd1e34e601cc499b825b3ba941b027b4",
+      "export_edited": false
+    },
+    {
+      "source": "run_baselines.py",
+      "path": "reproduction/patientphex_532512/run_baselines.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_edited": false
+    },
+    {
+      "source": "run_neural_fold_worker.py",
+      "path": "reproduction/patientphex_532512/run_neural_fold_worker.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "27dc0e54ff7b4afd70a10344eb1cbac0e05583dba592fb31d3ad649f5c7153ec",
+      "export_sha256": "27dc0e54ff7b4afd70a10344eb1cbac0e05583dba592fb31d3ad649f5c7153ec",
+      "export_edited": false
+    },
+    {
+      "source": "run_neural_frontier.py",
+      "path": "reproduction/patientphex_532512/run_neural_frontier.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "cf6266fc855517d88cd9cc43fdc0d906eb1c74b550a0b918aabdeb3d0582cbba",
+      "export_sha256": "808f1c20b50adbba4039439334654db509bd9dbb21e99c8a77b7110a54bebf62",
+      "export_edited": true
+    },
+    {
+      "source": "run_optimization.py",
+      "path": "reproduction/patientphex_532512/run_optimization.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_edited": false
+    },
+    {
+      "source": "run_patient_refinement.py",
+      "path": "reproduction/patientphex_532512/run_patient_refinement.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "ec1943cb9332a17d33837aac7fa39dd19daa20904ad4dcf2ae86e565211f0c64",
+      "export_sha256": "ec1943cb9332a17d33837aac7fa39dd19daa20904ad4dcf2ae86e565211f0c64",
+      "export_edited": false
+    },
+    {
+      "source": "run_recall_optimization.py",
+      "path": "reproduction/patientphex_532512/run_recall_optimization.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "b848ac1d0b105e89575291bb57ce55258b202be83f10daf8e53af6c1134981d1",
+      "export_sha256": "b848ac1d0b105e89575291bb57ce55258b202be83f10daf8e53af6c1134981d1",
+      "export_edited": false
+    },
+    {
+      "source": "run_set_optimization.py",
+      "path": "reproduction/patientphex_532512/run_set_optimization.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_edited": false
+    },
+    {
+      "source": "tests/test_enhanced_on_cpu.py",
+      "path": "reproduction/patientphex_532512/tests/test_enhanced_on_cpu.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "45ec72d70544271bec83824202302f440616e0a163ca33929c5c3eff58bed002",
+      "export_sha256": "45ec72d70544271bec83824202302f440616e0a163ca33929c5c3eff58bed002",
+      "export_edited": false
+    },
+    {
+      "source": "tests/test_lexical_recall_on_cpu.py",
+      "path": "reproduction/patientphex_532512/tests/test_lexical_recall_on_cpu.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "ff532698d9a3807c327b56f58b7c5a077775ac7e6319c43064477f19dfcfbe31",
+      "export_sha256": "ff532698d9a3807c327b56f58b7c5a077775ac7e6319c43064477f19dfcfbe31",
+      "export_edited": false
+    },
+    {
+      "source": "tests/test_neural_frontier_on_cpu.py",
+      "path": "reproduction/patientphex_532512/tests/test_neural_frontier_on_cpu.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "bc8cbfd38bf69d4c2d3602e5764fcf709e7f4a5455f2ff895cfd125976753fa2",
+      "export_sha256": "bc8cbfd38bf69d4c2d3602e5764fcf709e7f4a5455f2ff895cfd125976753fa2",
+      "export_edited": false
+    },
+    {
+      "source": "tests/test_patient_sets_on_cpu.py",
+      "path": "reproduction/patientphex_532512/tests/test_patient_sets_on_cpu.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "63756203f2e2fb023391040d69938e66ba4635d497d8a160d76723f42a160b62",
+      "export_sha256": "63756203f2e2fb023391040d69938e66ba4635d497d8a160d76723f42a160b62",
+      "export_edited": false
+    },
+    {
+      "source": "tests/test_patientphex_on_cpu.py",
+      "path": "reproduction/patientphex_532512/tests/test_patientphex_on_cpu.py",
+      "kind": "working_source_or_report",
+      "source_sha256": "8161fad45a8db0c6e1ddd6657143d33a16efe00816033c4ce97d5b0afeddd3f7",
+      "export_sha256": "8161fad45a8db0c6e1ddd6657143d33a16efe00816033c4ce97d5b0afeddd3f7",
+      "export_edited": false
+    },
+    {
+      "source": "runs/baselines_v1/source/analyze_baselines.py",
+      "path": "reproducibility/baselines_v1/source/analyze_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_edited": false
+    },
+    {
+      "source": "runs/baselines_v1/source/patientphex.py",
+      "path": "reproducibility/baselines_v1/source/patientphex.py",
+      "kind": "selected_run_source",
+      "source_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_edited": false
+    },
+    {
+      "source": "runs/baselines_v1/source/run_baselines.py",
+      "path": "reproducibility/baselines_v1/source/run_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/optimization_v1/source/analyze_baselines.py",
+      "path": "reproducibility/optimization_v1/source/analyze_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_edited": false
+    },
+    {
+      "source": "runs/optimization_v1/source/enhanced.py",
+      "path": "reproducibility/optimization_v1/source/enhanced.py",
+      "kind": "selected_run_source",
+      "source_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_edited": false
+    },
+    {
+      "source": "runs/optimization_v1/source/patientphex.py",
+      "path": "reproducibility/optimization_v1/source/patientphex.py",
+      "kind": "selected_run_source",
+      "source_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_edited": false
+    },
+    {
+      "source": "runs/optimization_v1/source/run_baselines.py",
+      "path": "reproducibility/optimization_v1/source/run_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/optimization_v1/source/run_optimization.py",
+      "path": "reproducibility/optimization_v1/source/run_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "8c17c2597b1d064ee0deff0326453a0aaa1a41e7493d6f6013a10597718617d1",
+      "export_sha256": "8c17c2597b1d064ee0deff0326453a0aaa1a41e7493d6f6013a10597718617d1",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/analyze_baselines.py",
+      "path": "reproducibility/recall_optimization_v1/source/analyze_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/enhanced.py",
+      "path": "reproducibility/recall_optimization_v1/source/enhanced.py",
+      "kind": "selected_run_source",
+      "source_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/lexical_recall.py",
+      "path": "reproducibility/recall_optimization_v1/source/lexical_recall.py",
+      "kind": "selected_run_source",
+      "source_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/patient_sets.py",
+      "path": "reproducibility/recall_optimization_v1/source/patient_sets.py",
+      "kind": "selected_run_source",
+      "source_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/patientphex.py",
+      "path": "reproducibility/recall_optimization_v1/source/patientphex.py",
+      "kind": "selected_run_source",
+      "source_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/predict_bundle.py",
+      "path": "reproducibility/recall_optimization_v1/source/predict_bundle.py",
+      "kind": "selected_run_source",
+      "source_sha256": "80f63d1bf9c8da58287780b2740b0bfde3f87d7ce1792f4ce8a1fac699d3bfe0",
+      "export_sha256": "80f63d1bf9c8da58287780b2740b0bfde3f87d7ce1792f4ce8a1fac699d3bfe0",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/run_baselines.py",
+      "path": "reproducibility/recall_optimization_v1/source/run_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/run_optimization.py",
+      "path": "reproducibility/recall_optimization_v1/source/run_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/run_recall_optimization.py",
+      "path": "reproducibility/recall_optimization_v1/source/run_recall_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "b848ac1d0b105e89575291bb57ce55258b202be83f10daf8e53af6c1134981d1",
+      "export_sha256": "b848ac1d0b105e89575291bb57ce55258b202be83f10daf8e53af6c1134981d1",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/source/run_set_optimization.py",
+      "path": "reproducibility/recall_optimization_v1/source/run_set_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/analyze_baselines.py",
+      "path": "reproducibility/neural_frontier_v1/source/analyze_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_sha256": "5312a64f3383b622cbda2535ae391e16adeb348c1046b88a64a7c0385e90d2cf",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/enhanced.py",
+      "path": "reproducibility/neural_frontier_v1/source/enhanced.py",
+      "kind": "selected_run_source",
+      "source_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_sha256": "287af301e639712a02c6a13ac8a69182ba0c0886364ba06f669ad891727285eb",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/lexical_recall.py",
+      "path": "reproducibility/neural_frontier_v1/source/lexical_recall.py",
+      "kind": "selected_run_source",
+      "source_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_sha256": "ac1af6d657bd3045851b9824151ec0d0a1cf78ba83115f62d2a8c49276c2562d",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/neural_frontier.py",
+      "path": "reproducibility/neural_frontier_v1/source/neural_frontier.py",
+      "kind": "selected_run_source",
+      "source_sha256": "9eb00b69c7e8edd3ab28ba6e3ef74639365d4985ad665c3ee3a532e9c1849676",
+      "export_sha256": "9eb00b69c7e8edd3ab28ba6e3ef74639365d4985ad665c3ee3a532e9c1849676",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/patient_sets.py",
+      "path": "reproducibility/neural_frontier_v1/source/patient_sets.py",
+      "kind": "selected_run_source",
+      "source_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_sha256": "767521381c02542070fc662d8a322fcea2bbfdd03fb9d725a7974dc7739914b2",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/patientphex.py",
+      "path": "reproducibility/neural_frontier_v1/source/patientphex.py",
+      "kind": "selected_run_source",
+      "source_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_sha256": "2b7fd0953be8239876e547fbe3c4561402be538a9c99182b574500576234bb14",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/predict_neural_bundle.py",
+      "path": "reproducibility/neural_frontier_v1/source/predict_neural_bundle.py",
+      "kind": "selected_run_source",
+      "source_sha256": "c7c0d49d14ad3351f80a97bc06e33ab74931181ab37c621126cf7c3b549dac3f",
+      "export_sha256": "c7c0d49d14ad3351f80a97bc06e33ab74931181ab37c621126cf7c3b549dac3f",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/run_baselines.py",
+      "path": "reproducibility/neural_frontier_v1/source/run_baselines.py",
+      "kind": "selected_run_source",
+      "source_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_sha256": "9e2bc67e241e2ceaabe9bc3ddd86bb2b5f7ac8a51de1438ce50103598fdc02f3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/run_neural_frontier.py",
+      "path": "reproducibility/neural_frontier_v1/source/run_neural_frontier.py",
+      "kind": "selected_run_source",
+      "source_sha256": "cf6266fc855517d88cd9cc43fdc0d906eb1c74b550a0b918aabdeb3d0582cbba",
+      "export_sha256": "808f1c20b50adbba4039439334654db509bd9dbb21e99c8a77b7110a54bebf62",
+      "export_edited": true
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/run_optimization.py",
+      "path": "reproducibility/neural_frontier_v1/source/run_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_sha256": "b286b679764fd85ecfedc88d5afbd624e2cc98698aa37cf961f73b82d6be93d3",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/source/run_set_optimization.py",
+      "path": "reproducibility/neural_frontier_v1/source/run_set_optimization.py",
+      "kind": "selected_run_source",
+      "source_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_sha256": "3a26bf61b8498cfccb689dc865fba887bc661e0bba1599d4482f5004bbdbdfa9",
+      "export_edited": false
+    },
+    {
+      "source": "runs/recall_optimization_v1/protocol.md",
+      "path": "reproducibility/recall_optimization_v1/source/RECALL_OPTIMIZATION_PROTOCOL.md",
+      "kind": "frozen_protocol",
+      "source_sha256": "bb09072b851a96645e7b53d411161c734ab187719965f0a8181121eaeb25ba5a",
+      "export_sha256": "bb09072b851a96645e7b53d411161c734ab187719965f0a8181121eaeb25ba5a",
+      "export_edited": false
+    },
+    {
+      "source": "runs/neural_frontier_v1/protocol.md",
+      "path": "reproducibility/neural_frontier_v1/source/FRONTIER_EXECUTION_PROTOCOL.md",
+      "kind": "frozen_protocol",
+      "source_sha256": "39c7bbeafc24dd88a4a21fe198eb836495f57eb1be1b83998485a1fe43aff891",
+      "export_sha256": "39c7bbeafc24dd88a4a21fe198eb836495f57eb1be1b83998485a1fe43aff891",
+      "export_edited": false
+    }
+  ]
+}

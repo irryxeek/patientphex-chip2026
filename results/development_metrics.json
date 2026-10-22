@@ -1,0 +1,323 @@
+{
+  "adopt": true,
+  "variants": {
+    "baseline": {
+      "metrics": {
+        "mention": {
+          "precision": 0.7857142857142857,
+          "recall": 0.6498559077809798,
+          "f1": 0.7113564668769716,
+          "tp": 902,
+          "fp": 246,
+          "fn": 486
+        },
+        "document": {
+          "precision": 0.8993963782696177,
+          "recall": 0.6497093023255814,
+          "f1": 0.7544303797468355,
+          "tp": 447,
+          "fp": 50,
+          "fn": 241
+        },
+        "patient_micro": {
+          "precision": 0.5435244161358811,
+          "recall": 0.5470085470085471,
+          "f1": 0.5452609158679447,
+          "tp": 256,
+          "fp": 215,
+          "fn": 212
+        },
+        "patient_macro": {
+          "precision": 0.396745135414726,
+          "recall": 0.45017194501460367,
+          "f1": 0.38546584297529307
+        },
+        "score": 0.5991284013667613,
+        "score_percent": 59.912840136676124,
+        "patients": 54,
+        "gold_audit_counts": {
+          "documents": 16,
+          "entities": 1393,
+          "negative_entities": 25,
+          "patient_links_raw": 500,
+          "patient_links_literal_unique": 460,
+          "patient_links_split_unique": 468,
+          "duplicate_association_value": 35,
+          "duplicate_association_excess": 40,
+          "patients": 54,
+          "duplicate_entity_unit": 3,
+          "nonstandard_note": 1,
+          "compound_association_value": 6
+        },
+        "gold_association_compound_policy": "split_hpo",
+        "evaluation_status": "local_reference_only_not_official_scorer",
+        "assumptions": [
+          "Gold unmapped (-1) mentions match one prediction by offset/length regardless of predicted ID; excluded from document HPO sets.",
+          "Negated predictions are excluded; positive predictions on gold-negated spans are false positives.",
+          "Empty global mention/document/micro denominators yield zero; both-empty patient sets yield one.",
+          "Known reference/acknowledgment/funding metadata are excluded. Other non-body categories remain unspecified; title/abstract are retained pending official scorer verification.",
+          "Duplicate gold entries are sets. Only NO is negative; other notes remain positive. Malformed, obsolete and out-of-branch gold IDs are retained literally, not dropped or repaired.",
+          "Gold patient compounds use 'split_hpo'; report the alternative as scoring sensitivity.",
+          "Public rules do not fully specify these edge cases; verify against the organizers' scorer when available."
+        ]
+      },
+      "patient_groups": {
+        "empty": {
+          "patients": 4,
+          "macro_f1": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        },
+        "nonempty": {
+          "patients": 50,
+          "macro_f1": 0.4163031104133165,
+          "tp": 256,
+          "fp": 211,
+          "fn": 212
+        },
+        "one_to_three": {
+          "patients": 23,
+          "macro_f1": 0.24625736582258323,
+          "tp": 18,
+          "fp": 60,
+          "fn": 25
+        },
+        "four_plus": {
+          "patients": 27,
+          "macro_f1": 0.5611568928424597,
+          "tp": 238,
+          "fp": 151,
+          "fn": 187
+        }
+      }
+    },
+    "selected": {
+      "metrics": {
+        "mention": {
+          "precision": 0.7753623188405797,
+          "recall": 0.6938040345821326,
+          "f1": 0.7323193916349809,
+          "tp": 963,
+          "fp": 279,
+          "fn": 425
+        },
+        "document": {
+          "precision": 0.8850987432675045,
+          "recall": 0.7165697674418605,
+          "f1": 0.7919678714859437,
+          "tp": 493,
+          "fp": 64,
+          "fn": 195
+        },
+        "patient_micro": {
+          "precision": 0.6474654377880185,
+          "recall": 0.6004273504273504,
+          "f1": 0.623059866962306,
+          "tp": 281,
+          "fp": 153,
+          "fn": 187
+        },
+        "patient_macro": {
+          "precision": 0.5815352267163859,
+          "recall": 0.5654237007929742,
+          "f1": 0.5410326780904359
+        },
+        "score": 0.6720949520434166,
+        "score_percent": 67.20949520434166,
+        "patients": 54,
+        "gold_audit_counts": {
+          "documents": 16,
+          "entities": 1393,
+          "negative_entities": 25,
+          "patient_links_raw": 500,
+          "patient_links_literal_unique": 460,
+          "patient_links_split_unique": 468,
+          "duplicate_association_value": 35,
+          "duplicate_association_excess": 40,
+          "patients": 54,
+          "duplicate_entity_unit": 3,
+          "nonstandard_note": 1,
+          "compound_association_value": 6
+        },
+        "gold_association_compound_policy": "split_hpo",
+        "evaluation_status": "local_reference_only_not_official_scorer",
+        "assumptions": [
+          "Gold unmapped (-1) mentions match one prediction by offset/length regardless of predicted ID; excluded from document HPO sets.",
+          "Negated predictions are excluded; positive predictions on gold-negated spans are false positives.",
+          "Empty global mention/document/micro denominators yield zero; both-empty patient sets yield one.",
+          "Known reference/acknowledgment/funding metadata are excluded. Other non-body categories remain unspecified; title/abstract are retained pending official scorer verification.",
+          "Duplicate gold entries are sets. Only NO is negative; other notes remain positive. Malformed, obsolete and out-of-branch gold IDs are retained literally, not dropped or repaired.",
+          "Gold patient compounds use 'split_hpo'; report the alternative as scoring sensitivity.",
+          "Public rules do not fully specify these edge cases; verify against the organizers' scorer when available."
+        ]
+      },
+      "patient_groups": {
+        "empty": {
+          "patients": 4,
+          "macro_f1": 1.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "nonempty": {
+          "patients": 50,
+          "macro_f1": 0.5043152923376709,
+          "tp": 281,
+          "fp": 153,
+          "fn": 187
+        },
+        "one_to_three": {
+          "patients": 23,
+          "macro_f1": 0.37243867243867235,
+          "tp": 22,
+          "fp": 35,
+          "fn": 21
+        },
+        "four_plus": {
+          "patients": 27,
+          "macro_f1": 0.6166546352145953,
+          "tp": 259,
+          "fp": 118,
+          "fn": 166
+        }
+      }
+    },
+    "new_entities_old_relation": {
+      "metrics": {
+        "mention": {
+          "precision": 0.7753623188405797,
+          "recall": 0.6938040345821326,
+          "f1": 0.7323193916349809,
+          "tp": 963,
+          "fp": 279,
+          "fn": 425
+        },
+        "document": {
+          "precision": 0.8850987432675045,
+          "recall": 0.7165697674418605,
+          "f1": 0.7919678714859437,
+          "tp": 493,
+          "fp": 64,
+          "fn": 195
+        },
+        "patient_micro": {
+          "precision": 0.5610687022900763,
+          "recall": 0.6282051282051282,
+          "f1": 0.592741935483871,
+          "tp": 294,
+          "fp": 230,
+          "fn": 174
+        },
+        "patient_macro": {
+          "precision": 0.43153557935303966,
+          "recall": 0.5238575654752498,
+          "f1": 0.4375946373318803
+        },
+        "score": 0.638655958984169,
+        "score_percent": 63.865595898416906,
+        "patients": 54,
+        "gold_audit_counts": {
+          "documents": 16,
+          "entities": 1393,
+          "negative_entities": 25,
+          "patient_links_raw": 500,
+          "patient_links_literal_unique": 460,
+          "patient_links_split_unique": 468,
+          "duplicate_association_value": 35,
+          "duplicate_association_excess": 40,
+          "patients": 54,
+          "duplicate_entity_unit": 3,
+          "nonstandard_note": 1,
+          "compound_association_value": 6
+        },
+        "gold_association_compound_policy": "split_hpo",
+        "evaluation_status": "local_reference_only_not_official_scorer",
+        "assumptions": [
+          "Gold unmapped (-1) mentions match one prediction by offset/length regardless of predicted ID; excluded from document HPO sets.",
+          "Negated predictions are excluded; positive predictions on gold-negated spans are false positives.",
+          "Empty global mention/document/micro denominators yield zero; both-empty patient sets yield one.",
+          "Known reference/acknowledgment/funding metadata are excluded. Other non-body categories remain unspecified; title/abstract are retained pending official scorer verification.",
+          "Duplicate gold entries are sets. Only NO is negative; other notes remain positive. Malformed, obsolete and out-of-branch gold IDs are retained literally, not dropped or repaired.",
+          "Gold patient compounds use 'split_hpo'; report the alternative as scoring sensitivity.",
+          "Public rules do not fully specify these edge cases; verify against the organizers' scorer when available."
+        ]
+      },
+      "patient_groups": {
+        "empty": {
+          "patients": 4,
+          "macro_f1": 0.0,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0
+        },
+        "nonempty": {
+          "patients": 50,
+          "macro_f1": 0.4726022083184307,
+          "tp": 294,
+          "fp": 224,
+          "fn": 174
+        },
+        "one_to_three": {
+          "patients": 23,
+          "macro_f1": 0.32020491585708977,
+          "tp": 23,
+          "fp": 57,
+          "fn": 20
+        },
+        "four_plus": {
+          "patients": 27,
+          "macro_f1": 0.6024221241188327,
+          "tp": 271,
+          "fp": 167,
+          "fn": 154
+        }
+      }
+    }
+  },
+  "paired_difference": {
+    "method": "paired paper percentile bootstrap",
+    "resamples": 10000,
+    "seed": 42,
+    "documents": 16,
+    "unit": "percentage points",
+    "difference": {
+      "mention": {
+        "point": 2.0962924758009316,
+        "ci95": [
+          0.7419547127540954,
+          3.5141241885962247
+        ]
+      },
+      "document": {
+        "point": 3.7537491739108253,
+        "ci95": [
+          2.258894810861793,
+          5.1628895337467355
+        ]
+      },
+      "patient_micro": {
+        "point": 7.77989510943613,
+        "ci95": [
+          4.514839169490119,
+          11.298005716069573
+        ]
+      },
+      "patient_macro": {
+        "point": 15.556683511514285,
+        "ci95": [
+          5.895429360097074,
+          27.621763438265805
+        ]
+      },
+      "score": {
+        "point": 7.296655067665547,
+        "ci95": [
+          4.354696043588137,
+          10.334368988762868
+        ]
+      }
+    },
+    "limits": "Development comparison; excludes scorer, annotation and model-selection uncertainty."
+  }
+}

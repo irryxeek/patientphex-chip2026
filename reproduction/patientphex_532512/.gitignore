@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+artifacts/
+runs/
+submissions/
+sources/*.html
+sources/README.official.*
+sources/*.local.json
+sources/*.local.md
+*.local.json

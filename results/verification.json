@@ -1,0 +1,48 @@
+{
+  "source_verification_time": "2026-10-22T08:39:49.711251+00:00",
+  "focused_cpu_tests": {
+    "passed": 92,
+    "failed": 0,
+    "seconds": 9.02
+  },
+  "completed_neural_models": 12,
+  "total_optimizer_steps": 17700,
+  "sum_recorded_training_seconds": 1783.9561487541068,
+  "timing_note": "Sum of per-model training timers, not total wall time or billed GPU duration.",
+  "final_replay": {
+    "a": {
+      "predictions": {
+        "equal": true,
+        "original_sha256": "b0e92c36dbcbd7109bd9fd08d45d0ea0cdf4a89556bf6f0ad3f00f8498d1d191",
+        "replay_sha256": "b0e92c36dbcbd7109bd9fd08d45d0ea0cdf4a89556bf6f0ad3f00f8498d1d191",
+        "byte_equal": true
+      },
+      "evidence": {
+        "equal": true,
+        "original_sha256": "64c6008220f696f74996dec1d30a309f71e6ded949e9fd6ed9542134029b18fa",
+        "replay_sha256": "64c6008220f696f74996dec1d30a309f71e6ded949e9fd6ed9542134029b18fa",
+        "byte_equal": true
+      }
+    },
+    "b": {
+      "predictions": {
+        "equal": true,
+        "original_sha256": "09d6a1ab2bde5bd49af552680d0d68bd8b1b1eadd603944db01d10eeae1dd06b",
+        "replay_sha256": "09d6a1ab2bde5bd49af552680d0d68bd8b1b1eadd603944db01d10eeae1dd06b",
+        "byte_equal": true
+      },
+      "evidence": {
+        "equal": true,
+        "original_sha256": "62b4462966e6498b238c116e0761ef663be5cde90d1c35c70679c10f82fd800a",
+        "replay_sha256": "62b4462966e6498b238c116e0761ef663be5cde90d1c35c70679c10f82fd800a",
+        "byte_equal": true
+      }
+    }
+  },
+  "input_hashes_verified": true,
+  "frozen_source_hashes_verified": true,
+  "all_inner_replays_equal": true,
+  "original_artifact_checks_passed": true,
+  "full_repository_tests": "not_run",
+  "replay_hardware": "RTX 4090; frozen software; no arbitrary-hardware byte-equality claim"
+}

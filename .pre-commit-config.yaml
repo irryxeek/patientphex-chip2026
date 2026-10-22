@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: Ruff check
+        entry: python -m ruff check
+        language: system
+        types_or: [python, pyi]
+        exclude: ^reproducibility/
+      - id: ruff-format
+        name: Ruff format check
+        entry: python -m ruff format --check
+        language: system
+        types_or: [python, pyi]
+        exclude: ^reproducibility/
